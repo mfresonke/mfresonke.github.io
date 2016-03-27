@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Let's define some variables to help us
+ANIMAL=hellokitty
+
 # Read Enters the User's Input into the given Enviornment Variable.
 read -p "Please Enter a Glorious Sentence: " ANSWER
 
@@ -13,7 +16,7 @@ do
 done
 
 # Cowsay the Output for Good Measure
-cowsay -f hellokitty $ANSWER
+cowsay -f $ANIMAL $ANSWER
 
 # And for that special ending
 espeak "$ANSWER"
