@@ -50,6 +50,16 @@
     To install this beast, extract the .zip and drag the "usr" folder into your cygwin directory. This will be installed at your root (C:) drive.
     Accept any overwrite warnings, it's NBD.
   </p>
+  <h2>Link Windows Home to Cygwin Home <small>(Technically optional, but you should really do it)</small></h2>
+  <p>
+    Open an "Administrative" Command Line Prompt. (Open start menu, type "cmd", right-click "Run As Administrator")
+    <br />
+    Type the following (for 64-bit):
+    <code>mklink /D C:\cygwin64\home\%USERNAME%\win-home %HOMEDRIVE%%HOMEPATH%</code>
+    <br />
+    And for you 32-bit Holdouts...
+    <code>mklink /D C:\cygwin\home\%USERNAME%\win-home %HOMEDRIVE%%HOMEPATH%</code>
+  </p>
   <h2>C'Mon Max! I Wanna Learn this SH!</h2>
   <p>
     Well good! Because the setup is done for you Windoze peepz!
