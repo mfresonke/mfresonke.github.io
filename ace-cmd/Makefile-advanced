@@ -1,0 +1,10 @@
+all: hello ace-rules
+
+hello:
+	g++ hello-world.cpp -o hello.out
+
+ace-rules:
+	g++ ace-rules.cpp -o ace-rules.out
+
+clean:
+	rm -f *.cpp
