@@ -1,10 +1,14 @@
 all: hello ace-rules
 
 hello:
-	g++ hello-world.cpp -o hello.out
+	g++ -o hello.out hello-world.cpp
 
 ace-rules:
-	g++ ace-rules.cpp -o ace-rules.out
+	g++ -o ace-rules.out ace-rules.cpp
+
+webserver:
+	go build -o webserver.out webserver.go
 
 clean:
-	rm -f *.cpp
+	rm -f *.out
+	go clean
