@@ -5,7 +5,7 @@ int main() {
   while (loop) {
     std::cout << "How much do you love SEC?" << std::endl
       << "(1) SEC is chill AF (as fudge)." << std::endl
-      << "(2) DUUUUDDEEE! ACE is da BOMB!" << std::endl
+      << "(2) DUUUUDDEEE! SEC is da BOMB!" << std::endl
       << "(3) Why would you even ask that man?????" << std::endl
       << "Choose an Option, or enter (4) to quit: ";
 
